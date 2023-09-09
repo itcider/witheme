@@ -821,9 +821,7 @@ margin-bottom: 5px !important;
     #breadcrumbs li{
       display: inline-block;
     }
-    ul.children{
-      border-left: 3px solid #888 !important;
-    }
+
     li.cat-item{
       color: #888 !important;
       margin-left: 5px;
