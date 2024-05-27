@@ -759,7 +759,7 @@ if ( ! function_exists( 'wi_get_all_google_fonts' ) ) {
 	/**
 	 * Return an array of all of our Google Fonts.
 	 *
-	 * @since 3.3.1
+	 * @since 1.3.0
 	 * @param string $amount How many fonts to return.
 	 * @return array The list of Google Fonts.
 	 */
@@ -804,7 +804,7 @@ if ( ! function_exists( 'wi_get_all_google_fonts_ajax' ) ) {
 	/**
 	 * Return an array of all of our Google Fonts.
 	 *
-	 * @since 3.3.1
+	 * @since 1.3.0
 	 */
 	function wi_get_all_google_fonts_ajax() {
 		if ( wi_is_using_dynamic_typography() ) {
@@ -834,7 +834,7 @@ if ( ! function_exists( 'wi_get_google_font_variants' ) ) {
 	 * Wrapper function to find variants for chosen Google Fonts
 	 * Example: wi_get_google_font_variation( 'Open Sans' )
 	 *
-	 * @since 3.3.1
+	 * @since 1.3.0
 	 *
 	 * @param string $font The font to look up.
 	 * @param string $key The option to look up.
@@ -888,7 +888,7 @@ if ( ! function_exists( 'wi_get_google_font_category' ) ) {
 	 * Wrapper function to find the category for chosen Google Font
 	 * Example: wi_get_google_font_category( 'Open Sans' )
 	 *
-	 * @since 3.3.1
+	 * @since 1.3.0
 	 *
 	 * @param string $font The name of our font.
 	 * @param string $key The ID of the font setting.
@@ -937,7 +937,7 @@ if ( ! function_exists( 'wi_get_font_family_css' ) ) {
 	/**
 	 * Wrapper function to create font-family value for CSS.
 	 *
-	 * @since 3.3.1
+	 * @since 1.3.0
 	 *
 	 * @param string $font The name of our font.
 	 * @param string $settings The ID of the settings we're looking up.

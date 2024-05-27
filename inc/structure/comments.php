@@ -160,8 +160,8 @@ function wi_set_comment_form_defaults( $defaults ) {
 	$defaults['comment_notes_after']  = '';
 	$defaults['id_form']              = 'commentform';
 	$defaults['id_submit']            = 'submit';
-	$defaults['title_reply']          = apply_filters( 'wi_leave_comment', __( '댓글 남기기', 'witheme' ) );
-	$defaults['label_submit']         = apply_filters( 'wi_post_comment', __( '댓글 남기기', 'witheme' ) );
+	$defaults['title_reply']          = apply_filters( 'wi_leave_comment', __( 'Leave a Comment', 'witheme' ) );
+	$defaults['label_submit']         = apply_filters( 'wi_post_comment', __( 'Post Comment', 'witheme' ) );
 
 	return $defaults;
 }
@@ -180,23 +180,23 @@ function wi_filter_comment_fields( $fields ) {
 
 	$fields['author'] = sprintf(
 		'<label for="author" class="screen-reader-text">%1$s</label><input placeholder="%1$s%3$s" id="author" name="author" type="text" value="%2$s" size="30"%4$s />',
-		esc_html__( '이름', 'witheme' ),
+		esc_html__( 'Name', 'witheme' ),
 		esc_attr( $commenter['comment_author'] ),
-		$required ? ' (*필수)' : '',
+		$required ? ' *' : '',
 		$required ? ' required' : ''
 	);
 
 	$fields['email'] = sprintf(
 		'<label for="email" class="screen-reader-text">%1$s</label><input placeholder="%1$s%3$s" id="email" name="email" type="email" value="%2$s" size="30"%4$s />',
-		esc_html__( '이메일', 'witheme' ),
+		esc_html__( 'Email', 'witheme' ),
 		esc_attr( $commenter['comment_author_email'] ),
-		$required ? ' (*필수)' : '',
+		$required ? ' *' : '',
 		$required ? ' required' : ''
 	);
 
 	$fields['url'] = sprintf(
 		'<label for="url" class="screen-reader-text">%1$s</label><input placeholder="%1$s" id="url" name="url" type="url" value="%2$s" size="30" />',
-		esc_html__( '사이트 주소', 'witheme' ),
+		esc_html__( 'Website', 'witheme' ),
 		esc_attr( $commenter['comment_author_url'] )
 	);
 

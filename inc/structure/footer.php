@@ -81,7 +81,7 @@ if ( ! function_exists( 'wi_add_footer_info' ) ) {
 			get_bloginfo( 'name' ),
 			esc_url( 'https://wi.itcider.com' ),
 			_x( '', 'witheme', 'witheme' ),
-			__( 'Wi theme v3.3.2 by itcider', 'witheme' ),
+			__( 'Wi theme v3.4.0 by itcider', 'witheme' ),
 			'microdata' === wi_get_schema_type() ? ' itemprop="url"' : ''
 		);
 

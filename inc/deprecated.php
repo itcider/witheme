@@ -856,7 +856,7 @@ if ( ! function_exists( 'wi_typography_convert_values' ) ) {
 	 * Take the old body font value and strip it of variants
 	 * This should only run once
 	 *
-	 * @since 3.3.2
+	 * @since 1.3.0
 	 * @deprecated 3.0.0
 	 */
 	function wi_typography_convert_values() {

@@ -138,16 +138,16 @@ if ( ! function_exists( 'wi_widgets_init' ) ) {
 	 */
 	function wi_widgets_init() {
 		$widgets = array(
-			'sidebar-1' => __( '우측 사이드바', 'witheme' ),
-			'sidebar-2' => __( '좌측 사이드바', 'witheme' ),
-			'header' => __( '헤더', 'witheme' ),
-			'footer-1' => __( '하단 위젯 1', 'witheme' ),
-			'footer-2' => __( '하단 위젯 2', 'witheme' ),
-			'footer-3' => __( '하단 위젯 3', 'witheme' ),
-			'footer-4' => __( '하단 위젯 4', 'witheme' ),
-			'footer-5' => __( '하단 위젯 5', 'witheme' ),
-			'footer-bar' => __( '하단바', 'witheme' ),
-			'top-bar' => __( '탑 바', 'witheme' ),
+			'sidebar-1' => __( 'Right Sidebar', 'witheme' ),
+			'sidebar-2' => __( 'Left Sidebar', 'witheme' ),
+			'header' => __( 'Header', 'witheme' ),
+			'footer-1' => __( 'Footer Widget 1', 'witheme' ),
+			'footer-2' => __( 'Footer Widget 2', 'witheme' ),
+			'footer-3' => __( 'Footer Widget 3', 'witheme' ),
+			'footer-4' => __( 'Footer Widget 4', 'witheme' ),
+			'footer-5' => __( 'Footer Widget 5', 'witheme' ),
+			'footer-bar' => __( 'Footer Bar', 'witheme' ),
+			'top-bar' => __( 'Top Bar', 'witheme' ),
 		);
 
 		foreach ( $widgets as $id => $name ) {

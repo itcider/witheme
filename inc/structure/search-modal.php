@@ -28,7 +28,6 @@ function wi_do_search_modal() {
 	<?php
 }
 
-add_action( 'wi_menu_bar_items', 'wi_do_search_modal_trigger' );
 /**
  * Create the search modal trigger.
  */
@@ -100,9 +99,9 @@ add_action( 'wi_inside_search_modal', 'wi_do_search_fields' );
 function wi_do_search_fields() {
 	?>
 	<form role="search" method="get" class="search-modal-form" action="<?php echo esc_url( home_url( '/' ) ); ?>">
-		<label class="screen-reader-text"><?php echo apply_filters( 'wi_search_label', _x( 'Search for:', 'label', 'witheme' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></label>
+		<label for="search-modal-input" class="screen-reader-text"><?php echo apply_filters( 'wi_search_label', _x( 'Search for:', 'label', 'witheme' ) ); // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped ?></label>
 		<div class="search-modal-fields">
-			<input type="search" class="search-field" placeholder="<?php echo esc_attr( apply_filters( 'wi_search_placeholder', _x( '검색어를 입력하세요', 'placeholder', 'witheme' ) ) ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
+			<input id="search-modal-input" type="search" class="search-field" placeholder="<?php echo esc_attr( apply_filters( 'wi_search_placeholder', _x( 'Search &hellip;', 'placeholder', 'witheme' ) ) ); ?>" value="<?php echo get_search_query(); ?>" name="s" />
 			<button aria-label="<?php echo esc_attr( apply_filters( 'wi_search_button', _x( 'Search', 'submit button', 'witheme' ) ) ); ?>"><?php echo wi_get_svg_icon( 'search' ); // phpcs:ignore -- Escaped in function. ?></button>
 		</div>
 		<?php do_action( 'wi_inside_search_modal_form' ); ?>

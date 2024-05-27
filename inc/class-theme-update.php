@@ -130,7 +130,7 @@ class witheme_Theme_Update {
 	/**
 	 * Remove variants from font family values.
 	 *
-	 * @since 3.3.2
+	 * @since 1.3.0
 	 */
 	public static function v_1_3_0() {
 		// Don't run this if Typography add-on is activated.

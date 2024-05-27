@@ -133,7 +133,7 @@ function wi_do_search_results_title( $template ) {
 				wi_get_attr( 'page-header' ),
 				sprintf(
 					/* translators: 1: Search query name */
-					__( '&#34;%s&#34;에 대한 검색 결과', 'witheme' ),
+					__( 'Search Results for: %s', 'witheme' ),
 					'<span>' . get_search_query() . '</span>'
 				)
 			)

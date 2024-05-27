@@ -647,7 +647,7 @@ if ( ! function_exists( 'wi_customize_register' ) ) {
 				'choices' => array(
 					'current' => __( '기본', 'witheme' ),
 					'default' => __( '왼쪽 정렬', 'witheme' ),
-					'nav-left' => __( '오른쪽 정렬' ),
+					'nav-left' => __( '오른쪽 정렬','witheme' ),
 					'classic' => __( '클래식', 'witheme' ),
 					'nav-before' => __( '상단바 위 메뉴', 'witheme' ),
 					'nav-after' => __( '상단바 아래 메뉴', 'witheme' ),

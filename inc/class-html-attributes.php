@@ -287,7 +287,6 @@ class witheme_HTML_Attributes {
 	 */
 	public function entry_header( $attributes ) {
 		$attributes['class'] .= ' entry-header';
-		$attributes['aria-label'] = esc_attr__( 'Content', 'witheme' );
 
 		return $attributes;
 	}

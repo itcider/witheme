@@ -10,7 +10,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 if ( ! function_exists( 'wi_post_image' ) ) {
-	add_action( 'wi_before_content', 'wi_post_image' );
+	add_action( 'wi_after_entry_header', 'wi_post_image' );
 	/**
 	 * Prints the Post Image to post excerpts
 	 */

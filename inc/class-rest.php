@@ -93,7 +93,7 @@ class witheme_Rest extends WP_REST_Controller {
 		delete_option( 'wi_dynamic_css_output' );
 		delete_option( 'wi_dynamic_css_cached_version' );
 
-		return $this->success( __( '설정 초기화가 완료되었습니다.', 'witheme' ) );
+		return $this->success( __( 'Settings reset.', 'witheme' ) );
 	}
 
 	/**

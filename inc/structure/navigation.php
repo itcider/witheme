@@ -490,6 +490,10 @@ function wi_add_menu_bar_items() {
 	if ( 'enable' === wi_get_option( 'nav_search' ) ) {
 		add_action( 'wi_menu_bar_items', 'wi_do_navigation_search_button' );
 	}
+
+	if ( wi_get_option( 'nav_search_modal' ) && 'flexbox' === wi_get_option( 'structure' ) && 'svg' === wi_get_option( 'icons' ) ) {
+		add_action( 'wi_menu_bar_items', 'wi_do_search_modal_trigger' );
+	}
 }
 
 /**
