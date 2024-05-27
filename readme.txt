@@ -6,7 +6,7 @@ License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Tags: two-columns, three-columns, one-column, right-sidebar, left-sidebar, footer-widgets, blog, e-commerce, flexible-header, full-width-template, buddypress, custom-header, custom-background, custom-menu, custom-colors, sticky-post, threaded-comments, translation-ready, rtl-language-support, featured-images, theme-options
 Requires at least: 5.2
 Tested up to: 6.3
-Stable tag: 3.3.2
+Stable tag: 3.4.0
 
 witheme는 한국어로 설정된 워드프레스에 최적화된 테마입니다.
 제네레이트프레스를 기반으로 하였습니다.

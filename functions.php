@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 // Set our theme version.
-define( 'wi_VERSION', '3.3.2' );
+define( 'wi_VERSION', '3.4.0' );
 
 if ( ! function_exists( 'wi_setup' ) ) {
 	add_action( 'after_setup_theme', 'wi_setup' );
@@ -134,7 +134,7 @@ function the_breadcrumb() {
     echo '<nav role="navigation" aria-label="Breadcrumbs" class="bf-breadcrumb clearfix bc-top-style"><ul id="breadcrumbs" itemscope="" itemtype="http://schema.org/BreadcrumbList"><meta name="numberOfItems" content="4"><meta name="itemListOrder" content="Ascending">';
     if (!is_home()) {
         echo '<li itemprop="itemListElement" itemscope="" itemtype="http://schema.org/ListItem" class="bf-breadcrumb-item bf-breadcrumb-begin"> <span itemprop="name"><a itemprop="item" href="';
-        echo get_option('home');
+        echo home_url();
         echo '">';
         echo get_bloginfo( 'name' ); 
         echo '<meta itemprop="position" content="1"></a></li> &#62; ';
